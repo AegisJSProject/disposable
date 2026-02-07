@@ -1,8 +1,18 @@
 {
   "name": "@aegisjsproject/disposable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library of utility functions for working with disposable objects",
-  "keywords": [],
+  "keywords": [
+    "disposable",
+    "resource-management",
+    "explicit-resource-management",
+    "cleanup",
+    "lifecycle",
+    "memory-leaks",
+    "abort-controller",
+    "abort-signal",
+    "using"
+  ],
   "type": "module",
   "main": "./disposable.cjs",
   "module": "./disposable.js",
