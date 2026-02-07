@@ -1,23 +1,17 @@
 import terser from '@rollup/plugin-terser';
 
 export default [{
-	input: 'index.js',
+	input: 'disposable.js',
 	output: [{
-		file: 'index.cjs',
+		file: 'disposable.cjs',
 		format: 'cjs',
 	}, {
-		file: 'index.min.js',
+		file: 'disposable.min.js',
 		format: 'iife',
 		plugins: [terser()],
 		sourcemap: true,
 	}, {
-		file: 'index.mjs',
+		file: 'disposable.mjs',
 		format: 'module',
 	}],
-}, {
-	input: 'consts.js',
-	output: {
-		file: 'consts.cjs',
-		format: 'cjs',
-	}
 }];
