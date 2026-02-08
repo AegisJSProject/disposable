@@ -1,4 +1,4 @@
-export const HTMLDisposableStackElement = 'customElement' in globalThis ? class HTMLDisposableStackElement extends HTMLElement {
+export const HTMLDisposableStackElement = 'customElements' in globalThis ? class HTMLDisposableStackElement extends HTMLElement {
 	#stack = new DisposableStack();
 	#internals = this.attachInternals();
 	#shadow = this.attachShadow({ mode: 'open' });
