@@ -7,7 +7,7 @@ export default [{
 		format: 'cjs',
 	}, {
 		file: 'disposable.min.js',
-		format: 'iife',
+		format: 'module',
 		plugins: [terser()],
 		sourcemap: true,
 	}, {

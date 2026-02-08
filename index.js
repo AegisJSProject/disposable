@@ -17,7 +17,10 @@ useAsyncDisposableStack(async (stack, { signal }) => {
 	stack.defer(() => console.log('Disposed'));
 	stack.use(new DisposableTask(() => 'Task Executed.')).then(console.log, console.error);
 
-	sheet.replace(`:root{background-image: url(${uri})}`);
+	sheet.replace(`:root{
+		background-image: url(${uri});
+	}`);
+
 	document.adoptedStyleSheets = [sheet];
 	controller.signal.addEventListener('abort', console.log, { once: true });
 
