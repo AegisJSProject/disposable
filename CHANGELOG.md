@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.3] - 2026-02-07
+
+### Fixed
+- Fix typo in defining custom element
+
 ## [v1.0.2] - 2026-02-07
 
 ### Added
