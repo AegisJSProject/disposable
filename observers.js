@@ -1,4 +1,3 @@
-/* global ReportingObserver: readonly */
 export const DisposableMutationObserver = 'MutationObserver' in globalThis
 	? class DisposableMutationObserver extends MutationObserver {
 		[Symbol.dispose]() {
