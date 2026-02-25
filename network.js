@@ -1,4 +1,3 @@
-/* global WebTransport: readonly */
 export const DisposableWorker = 'Worker' in globalThis
 	? class DisposableWorker extends Worker {
 		[Symbol.dispose]() {
